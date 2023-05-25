@@ -47,4 +47,4 @@ The application can be deployed on a web server (e.g., Apache, Nginx,gradio) alo
 If you find any bugs, have feature requests, or would like to contribute improvements, please open an issue or submit a pull request.
 
 ## Contact
-If you have any questions or inquiries regarding the Public Bicycle Rental System, please feel free to contact us at [**mssannitya@gmail.com**]
+If you have any questions or inquiries regarding the Public Bicycle Rental System, please feel free to contact me at [**mssannitya@gmail.com**]
