@@ -1,0 +1,64 @@
+import gradio as gr
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from joblib import dump, load
+from lightgbm import LGBMRegressor
+
+train = pd.read_csv('/content/train2.csv')
+features = ['season','holiday', 'workingday', 'weather', 'temp','atemp', 'humidity', 'windspeed', 'year', 'month', 'day','dayofweek', 'hour']
+target = 'count'
+X_train = train[features]
+Y_train = train[target]
+x_train, x_validate, y_train, y_validate = train_test_split(X_train, Y_train, random_state=100, test_size=0.25)
+model = LGBMRegressor()
+model.fit(X_train, Y_train)
+
+
+def predict_count(season, holiday, workingday, weather, temp, atemp, humidity, windspeed, year, month, day, dayofweek, hour):
+    # Prepare the input data
+    input_data = pd.DataFrame({
+        'season': [season],
+        'holiday': [holiday],
+        'workingday': [workingday],
+        'weather': [weather],
+        'temp': [temp],
+        'atemp': [atemp],
+        'humidity': [humidity],
+        'windspeed': [windspeed],
+        'year': [year],
+        'month': [month],
+        'day': [day],
+        'dayofweek': [dayofweek],
+        'hour': [hour]
+    })
+
+    # Make the prediction and return it as a string
+    count = model.predict(input_data)[0]
+    ans = round(count)
+    return str(ans)
+
+inputs = [
+    gr.inputs.Number(label="season"),
+    gr.inputs.Number(label="holiday"),
+    gr.inputs.Number(label="workingday"),
+    gr.inputs.Number(label="weather"),
+    gr.inputs.Number(label="temp"),
+    gr.inputs.Number(label="atemp"),
+    gr.inputs.Number(label="humidity"),
+    gr.inputs.Number(label="windspeed"),
+    gr.inputs.Number(label="year"),
+    gr.inputs.Number(label="month"),
+    gr.inputs.Number(label="day"),
+    gr.inputs.Number(label="dayofweek"),
+    gr.inputs.Number(label="hour")
+]
+
+interface = gr.Interface(
+    fn=predict_count,
+    inputs=inputs,
+    outputs=gr.outputs.Textbox(label="count"),
+    title="Predicting of Bicycles count",
+    layout="vertical",
+    theme="compact"
+)
+interface.launch(debug=True, share=True)
