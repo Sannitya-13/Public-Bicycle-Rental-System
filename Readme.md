@@ -26,9 +26,13 @@ The application can be deployed on a web server (e.g., Apache, Nginx,gradio) alo
 **To install and run the Public Bicycle Rental System:**
 
 **1.** Clone this repository to your local machine.
+      
+      
+      
        ```bash
-                git clone https://github.com/Sannitya-13/Public-Bicycle-Rental-System
-       ```
+   git clone https://github.com/Sannitya-13/Virtual-Auditing
+   
+      ```
 
 **2.** Set up the required dependencies, including Python and the necessary packages specified in the requirements.txt file.
 
