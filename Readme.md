@@ -30,9 +30,8 @@ The application can be deployed on a web server (e.g., Apache, Nginx,gradio) alo
       
       
        ```bash
-   git clone https://github.com/Sannitya-13/Virtual-Auditing
-   
-      ```
+                  git clone   https://github.com/Sannitya-13/Virtual-Auditing
+        ```
 
 **2.** Set up the required dependencies, including Python and the necessary packages specified in the requirements.txt file.
 
