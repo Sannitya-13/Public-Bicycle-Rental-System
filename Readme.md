@@ -5,10 +5,10 @@
 This repository contains the code for a Public Bicycle Rental System, a web-based application that allows users to rent bicycles for public use. The system provides a convenient and sustainable mode of transportation for individuals in urban areas.
 
 ## Features
-### User Registration: Users can create an account and register with the system.
-Bicycle Availability: Users can view the availability of bicycles at different rental stations.
-Bicycle Reservation: Users can reserve a bicycle for a specific time slot.
-Rental History: Users can view their rental history and track their usage.
+*User Registration*: Users can create an account and register with the system.
+*Bicycle Availability*: Users can view the availability of bicycles at different rental stations.
+*Bicycle Reservation*: Users can reserve a bicycle for a specific time slot.
+**Rental History**: Users can view their rental history and track their usage.
 Rental Pricing: The system calculates rental charges based on the duration of usage.
 Administrative Dashboard: Administrators have access to a dashboard to manage user accounts, track bicycles, and generate reports.
 Technologies Used
