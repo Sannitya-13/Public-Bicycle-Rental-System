@@ -115,7 +115,9 @@ submission.to_csv('submission.csv', index=False)
 
 1. **Efficiency**: LightGBM is known for its efficiency in training and prediction. It is designed to be highly optimized and can handle large datasets much faster than traditional gradient boosting algorithms.
 
-2. **Accuracy**: LightGBM often provides better accuracy compared to Decision Trees, especially when dealing with high-dimensional datasets and large sample sizes. It can capture complex interactions between features, leading to improved predictions.
+2. **Accuracy**: LightGBM often provides better accuracy compared to Decision Trees, especially when dealing with high-dimensional datasets and
+
+ large sample sizes. It can capture complex interactions between features, leading to improved predictions.
 
 3. **Handling Non-linearity**: LightGBM can naturally handle non-linear relationships between features and the target variable, which is important for modeling real-world phenomena like bike rentals.
 
@@ -139,12 +141,19 @@ pip install pandas scikit-learn xgboost lightgbm
 
 Google Colab - Public Bicycle Rental System
 (https://colab.research.google.com/drive/1eHO-B4Kkv0soiqua_4D9ov902oUFaFpA#scrollTo=DV_M2snLZDuo)
+
 ## Results
 📈 The model's performance and predictions will be reflected in the submission file. We aim to achieve accurate predictions of bicycle rental counts using the LightGBM Regressor.
 
-## 📬 Contact
+## Model Deployment and GUI Implementation
+🚀 For model deployment, we used the `joblib` library to save and load the trained LightGBM Regressor model. After training the model, we saved it to a file using `joblib.dump()`. This allows us to reuse the trained model without retraining it every time the application runs.
 
-Feel free to reach out to me via the following channels:
+In addition, we implemented a graphical user interface (GUI) using the `tkinter` library. The GUI allows users to input various features (season, holiday, weather, temperature, etc.) for a specific hour and get the predicted count of bicycles for that hour using the trained LightGBM Regressor model.
+
+The GUI consists of text labels, entry fields, and a submit button. Users can enter values for each feature, and upon clicking the "Predict Count" button, the GUI sends the input values to the model, which then returns the predicted bicycle count. The output is displayed on the GUI.
+
+## Contact Details
+📬 Feel free to reach out to me via the following channels:
 
 - **Email**: [mssannitya@gmail.com]
 - **LinkedIn**: [https://www.linkedin.com/in/m-s-052080214/]
