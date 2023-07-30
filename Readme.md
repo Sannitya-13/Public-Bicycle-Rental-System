@@ -139,10 +139,12 @@ Next, execute the Python script containing the above code to perform data prepro
 ## Results
 📈 The model's performance and predictions will be reflected in the submission file. We aim to achieve accurate predictions of bicycle rental counts using the LightGBM Regressor.
 
-## Contact Details
-For any questions or feedback, feel free to reach out to us:
-- Email: [ms.com]
-- Phone: [+1 (XXX) XXX-XXXX]
+## 📬 Contact
+
+Feel free to reach out to me via the following channels:
+
+- **Email**: [mssannitya@gmail.com]
+- **LinkedIn**: [https://www.linkedin.com/in/m-s-052080214/]
 
 ## Conclusion
 🚴‍♂️ This project demonstrates how to build a predictive model for a public bicycle rental system using LightGBM Regressor. The usage of LightGBM Regressor ensures efficient and accurate predictions, making it a suitable choice for this task. The knowledge gained from this project can be applied to real-world bike rental systems for better resource management and customer satisfaction.
