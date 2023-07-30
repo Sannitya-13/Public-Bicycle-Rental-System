@@ -134,8 +134,11 @@ In this project, LightGBM Regressor is expected to provide accurate predictions 
 pip install pandas scikit-learn xgboost lightgbm
 ```
 
-Next, execute the Python script containing the above code to perform data preprocessing, model training, prediction, and submission generation.
+## Google Collaboratory Link
+🔗 To showcase the project and its execution, you can access the Google Colaboratory notebook using the following link:
 
+Google Colab - Public Bicycle Rental System
+(https://colab.research.google.com/drive/1eHO-B4Kkv0soiqua_4D9ov902oUFaFpA#scrollTo=DV_M2snLZDuo)
 ## Results
 📈 The model's performance and predictions will be reflected in the submission file. We aim to achieve accurate predictions of bicycle rental counts using the LightGBM Regressor.
 
