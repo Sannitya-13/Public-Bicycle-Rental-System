@@ -115,9 +115,7 @@ submission.to_csv('submission.csv', index=False)
 
 1. **Efficiency**: LightGBM is known for its efficiency in training and prediction. It is designed to be highly optimized and can handle large datasets much faster than traditional gradient boosting algorithms.
 
-2. **Accuracy**: LightGBM often provides better accuracy compared to Decision Trees, especially when dealing with high-dimensional datasets and
-
- large sample sizes. It can capture complex interactions between features, leading to improved predictions.
+2. **Accuracy**: LightGBM often provides better accuracy compared to Decision Trees, especially when dealing with high-dimensional datasets and large sample sizes. It can capture complex interactions between features, leading to improved predictions.
 
 3. **Handling Non-linearity**: LightGBM can naturally handle non-linear relationships between features and the target variable, which is important for modeling real-world phenomena like bike rentals.
 
